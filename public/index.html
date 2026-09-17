@@ -104,7 +104,6 @@
                 </p>
             </section>
             <section class="row">
-                <span class="num">06</span>
                 <h2>Информация о рейтинге</h2>
                 <p>пока не присвоен.</p>
             </section>
@@ -179,6 +178,13 @@
             </section>
         </main>
 
-        <footer><span>ЦИКЛ</span><span>РНКО ЦИКЛ (АО)</span></footer>
+        <footer>
+            <span>ЦИКЛ</span><span>РНКО ЦИКЛ (АО) © <span id="year" /></span>
+        </footer>
+
+        <script>
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
     </body>
 </html>
